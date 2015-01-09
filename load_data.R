@@ -1,4 +1,3 @@
-setwd("C:/Users/r.hernandez.murcia/Downloads/exdata-data-household_power_consumption")
 household.data <- "household_power_consumption.txt"
 data <- read.table(household.data, header=TRUE, sep=";", na.strings = "?", colClasses = c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"))
 data$Date <- as.Date(data$Date, format= "%d/%m/%Y")
